@@ -1,0 +1,16 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.search-form {
+  width: 50%;
+}
+.first-nav {
+  padding-bottom: 10px;
+}
+.second-nav {
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}

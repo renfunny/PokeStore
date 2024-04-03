@@ -17,7 +17,12 @@
       <nav class="navbar bg-body-tertiary first-nav">
         <div class="container-fluid">
           <a href="./home.html" class="navbar-brand">
-            <img src="./img/pokeball-logo.png" width="45rem" height="45rem" />
+            <img
+              src="./img/pokeball-logo.png"
+              width="45rem"
+              height="45rem"
+              class="logo"
+            />
             PokeStore</a
           >
           <form class="d-flex search-form" role="search">
@@ -40,83 +45,27 @@
 
         <div class="container-fluid second-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Pokemon Types</a>
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Pokemon Types
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Fire</a></li>
+              <li><a class="dropdown-item" href="#">Earth</a></li>
+              <li><a class="dropdown-item" href="#">Water</a></li>
+            </ul>
+          </div>
           <a class="nav-link" href="#">Contact Us</a>
         </div>
       </nav>
     </header>
-    <main>
-      <div>
-        <h2>Video Games</h2>
-        <div>
-          <img src="./pokemon items/Pikachu.jpg" />
-          <h3>Title:Pokemon: Let's Go Pikachu!</h3>
-          <p>$5.60</p>
-        </div>
-        <div>
-          <img src="./pokemon items/Ruby.jpg" />
-          <img src="./pokemon items/Sapphire.jpg" />
-          <h3>PokÃ©mon Omega Ruby and Alpha Sapphire</h3>
-          <p>Cost: $3.32</p>
-        </div>
-        <div>
-          <img src="./pokemon items/PokemonCardTrade.png" />
-          <h3>Pokemon Trading Card Game</h3>
-          <p>Cost:$4.90</p>
-        </div>
-        <div>
-          <img src="./pokemon items/Battle.png" />
-          <h3>pokemon battle revelution</h3>
-          <p>$3.65</p>
-        </div>
-      </div>
-      <div>
-        <h2>Stuffed Animals</h2>
-        <div>
-          <img src="./pokemon items/Mew.jpg" />
-          <h3>Mew Stuffed Animal</h3>
-          <p>Cost: $2.29</p>
-        </div>
-        <div>
-          <img src="./pokemon items/EEVEE.jpg" />
-          <h3>Eevee stuffed animal</h3>
-          <p>cost: $3.44</p>
-        </div>
-        <div>
-          <img src="./pokemon items/Jigglypuff.jpg" />
-          <h3>Jigglypuff stuffed animal</h3>
-          <p>Cost: $4.55</p>
-        </div>
-        <div>
-          <img src="./pokemon items/Tepig.jpg" />
-          <h3>Tepig Stuffed Animal</h3>
-          <p>Cost: $5.00</p>
-        </div>
-      </div>
-      <div>
-        <h2>Figures</h2>
-        <div>
-          <img src="./pokemon items/Mewoth.jpg" />
-          <h3>Meowth Funkopop Figure</h3>
-          <p>Cost: $3.67</p>
-        </div>
-        <div>
-          <img src="./pokemon items/Lucario.jpg" />
-          <h3>Lucario Funkopop Figure</h3>
-          <p>Cost:$4.23</p>
-        </div>
-        <div>
-          <img src="./pokemon items/Duck.jpg" />
-          <h3>Psyduck Funkpop figure</h3>
-          <p>Cost:$1.89</p>
-        </div>
-        <div>
-          <img src="./pokemon items/Dragonite.jpg" />
-          <h3>Dragonite Funkopop Figure</h3>
-          <p>$Cost: $2.54</p>
-        </div>
-      </div>
-    </main>
+    <main></main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

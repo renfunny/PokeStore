@@ -1,9 +1,10 @@
-body {
+html {
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
+
 .logo {
   transition: transform 0.5s ease;
 }
@@ -13,10 +14,38 @@ body {
 .search-form {
   width: 50%;
 }
+.shopping-cart,
+.card {
+  transition: transform 0.2s ease;
+}
 .first-nav {
   padding-bottom: 10px;
+  width: 100%;
 }
 .second-nav {
   padding-top: 10px;
   border-top: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+.banner {
+  margin: -175px -10px 15px -10px;
+  height: 300px;
+}
+.banner-img {
+  width: 100%;
+}
+main {
+  margin: 10px;
+  z-index: 2;
+}
+.card-image {
+  border-bottom: 5px solid black;
+  background-image: url(./img/istockphoto-1051268740-612x612.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card:hover,
+.shopping-cart:hover {
+  transform: scale(1.1);
 }

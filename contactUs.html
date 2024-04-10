@@ -9,93 +9,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./home.css" />
-    <title>Document</title>
-
-    <style>
-      #sloganSentence1
-      {
-        text-align:center;
-        margin-top: 120px;
-        font-size:45px;
-      }
-
-      #sloganSentence2
-      {
-        text-align:center;
-        font-size:45px;
-      }
-
-      #sloganSentence3
-      {
-        text-align:center;
-        font-size:30px;
-      }
-
-      .contactBox
-      {
-        border: 1px solid black;
-        width:700px;
-        margin-top:35px;
-        position:absolute;
-        left: 900px;
-        padding: 25px;
-        text-align: center;
-      }
-
-      #contactSub
-      {
-       font-weight: bold;
-       margin-bottom: 25px
-      }
-
-      #name,#email,#subject
-      {
-        position:relative;
-        left:50px;
-        height:25px;
-        width: 300px;
-      }
-
-      #question
-      {
-        position:relative;
-        left:41px;
-      }
-
-      #nameTitle
-      {
-        position:relative;
-        right:75px
-      }
-
-      #emailTitle
-      {
-        position:relative;
-        right: 72px;
-
-      }
-
-      #subjectTitle
-      {
-        position:relative;
-        right: 79px;
-      }
-    
-      #qTitle
-      {
-        position:relative;
-        right: 75px;
-      }
-      
-    
-      
-    </style>
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./contactUs.css" />
+    <title>PokeStore</title>
   </head>
   <body>
     <header>
-      <nav class="navbar bg-body-tertiary first-nav">
-        <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid first-nav">
           <a href="./home.html" class="navbar-brand">
             <img
               src="./img/pokeball-logo.png"
@@ -124,7 +45,9 @@
         </div>
 
         <div class="container-fluid second-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="./home.html"
+            >Home</a
+          >
           <div class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -146,47 +69,59 @@
       </nav>
     </header>
     <main>
-
+      <div class="banner">
+        <img
+          src="./img/wp12044994.jpeg"
+          alt="pokemon_banner"
+          class="banner-img"
+        />
+      </div>
       <h1 id="sloganSentence1">Got any questions regarding</h1>
-          <h1 id="sloganSentence2"> what Pokemon is best for you?</h1>
-          <h2 id="sloganSentence3">Contact us and we'll help you right away!</h2>
- 
-        <form id="contactForm">
-      
+      <h1 id="sloganSentence2">what Pokemon is best for you?</h1>
+      <h2 id="sloganSentence3">Contact us and we'll help you right away!</h2>
+
+      <form id="contactForm">
         <div class="contactBox">
           <h3 id="contactSub">Contact information</h3>
           <p id="nameTitle">Name: <input type="text" id="name" required /></p>
-          <p id="emailTitle">Email: <input type="email" id="email" placeholder="yourfullname@email.com" required /></p>
-          <p id="subjectTitle">Subject: <input type="text" id="subject" required /></p>
-          <p id="qTitle">Question: <textarea id="question" rows="3" cols="35" required></textarea></p>
-          <p><input type="submit" value="Submit" onclick="validateForm()"></p>
-
+          <p id="emailTitle">
+            Email:
+            <input
+              type="email"
+              id="email"
+              placeholder="yourfullname@email.com"
+              required
+            />
+          </p>
+          <p id="subjectTitle">
+            Subject: <input type="text" id="subject" required />
+          </p>
+          <p id="qTitle">
+            Question:
+            <textarea id="question" rows="3" cols="35" required></textarea>
+          </p>
+          <p><input type="submit" value="Submit" onclick="validateForm()" /></p>
         </div>
-
-        </form>
-
-    
-
+      </form>
     </main>
     <script>
-     function validateForm() 
-     {
-     var name = document.getElementById("name").value;    
-      var email = document.getElementById("email").value;     
-     var subject = document.getElementById("subject").value;     
-    var question = document.getElementById("question").value;
-   
-     if (name === "" || email === "" || subject === "" || question === "") {
-      alert("Submission aborted! Please fill in all the fields before submitting.");
-       return false;
-      } else {
-       alert("Submission complete!");
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var question = document.getElementById("question").value;
+
+        if (name === "" || email === "" || subject === "" || question === "") {
+          alert(
+            "Submission aborted! Please fill in all the fields before submitting."
+          );
+          return false;
+        } else {
+          alert("Submission complete!");
+        }
+
+        document.getElementById("contactForm").submit();
       }
-
-     document.getElementById("contactForm").submit();
-
-}
-
     </script>
   </body>
 </html>

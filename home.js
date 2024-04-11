@@ -1,4 +1,4 @@
-let itemNum = 30;
+let itemNum = 32;
 function fetchPokemon() {
   for (let i = 0; i < itemNum; i++) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${i + 1}`).then((response) => {
@@ -13,8 +13,11 @@ function fetchPokemon() {
 let cardsContainer = document.getElementById("cards-container");
 
 function createCard(data) {
+  let cardAnchor = document.createElement("a");
+  cardAnchor.href = `./pokeItem.html?id=${data.id}`;
   let card = document.createElement("div");
   card.classList.add("col");
+  card.id = data.id;
   let cardBody = document.createElement("div");
   cardBody.classList.add("card");
   let cardImage = document.createElement("img");
@@ -36,7 +39,17 @@ function createCard(data) {
   cardContent.appendChild(cardTitle);
   cardContent.appendChild(cardText);
   card.appendChild(cardBody);
-  cardsContainer.appendChild(card);
+  cardAnchor.appendChild(card);
+  cardsContainer.appendChild(cardAnchor);
+}
+
+function selectCard() {
+  let card = document.querySelectorAll(".card");
+  card.forEach((item) => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("selected");
+    });
+  });
 }
 
 fetchPokemon();

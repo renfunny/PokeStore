@@ -9,78 +9,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./pokeItem.css" />
     <title>Pokestore</title>
-
-    <style>
-    .nameBox
-    {
-        margin-top:65px;
-        border:1px solid black;
-        padding-top: 20px;
-        width:600px;
-        position: absolute;
-        right:60px;
-        height:65px;
-        text-align: center;
-      
-    }
-
-    .priceBox
-    {
-        margin-top:185px;
-        border:1px solid black;
-        padding-top: 20px;
-        width:132px;
-        position: absolute;
-        right:528px;
-        text-align: center;
-    }
-    
-    .descBox
-    {  
-        margin-top:310px;
-        border:1px solid black;
-        padding-top: 20px;
-        width:600px;
-        position: absolute;
-        right:60px;
-        height:65px;
-        text-align: center;
-    }
-
-    .picture
-    {
-        border:1px solid black;
-        width:642px;
-        position: absolute;
-        top: 172px;
-        height:450px;
-        margin-left:55px;
-        background-image: url(./card-background.jpeg);
-        background-size: cover;
-        background-position:center;
-        
-    }
-
-    #speakerIcon
-    {
-        height:65px;
-        width:65px;
-        position:absolute;
-        bottom:5px;
-        right:5px;
-
-    }
-
-    
-      
-    </style>
   </head>
   <body>
     <header>
-      <nav class="navbar bg-body-tertiary first-nav">
-        <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid first-nav">
           <a href="./home.html" class="navbar-brand">
             <img
               src="./img/pokeball-logo.png"
@@ -109,7 +45,9 @@
         </div>
 
         <div class="container-fluid second-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="./home.html"
+            >Home</a
+          >
           <div class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -131,30 +69,97 @@
       </nav>
     </header>
     <main>
-
-    <div class="nameBox">
-    <p >Name of Pokemon:</p>
-    </div>
-
-    <div class="priceBox">
-     <p>Price:</p>   
-    </div>
-
-    <div class="descBox">
-        <p>Description:</p>
-    </div>
-
-    <div class="picture">
-
-    <img src="./Mobile-Speaker-icon.png" id="speakerIcon">
-
-    </div>
-   
-
+      <div class="banner">
+        <img
+          src="./img/wp12044994.jpeg"
+          alt="pokemon_banner"
+          class="banner-img"
+        />
+      </div>
+      <div class="container">
+        <div class="image-container">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img id="image1" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img id="image2" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img id="image3" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img id="image4" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+          <div class="text-container">
+            <h3 id="name">Name</h3>
+            <p id="price">Price</p>
+            <p id="description">Description</p>
+          </div>
+        </div>
+      </div>
     </main>
-    <script>
-  
-
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./pokeItem.js"></script>
   </body>
 </html>

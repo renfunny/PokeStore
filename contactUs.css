@@ -16,53 +16,10 @@
 
 #contactForm {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-
-.contactBox {
+  align-content: center;
+  margin: 50px 20px 50px 20px;
+  padding: 20px;
   border: 1px solid black;
-  width: 700px;
-  margin-top: 35px;
-  left: 900px;
-  padding: 25px;
-  text-align: center;
-}
-
-#contactSub {
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-
-#name,
-#email,
-#subject {
-  position: relative;
-  left: 50px;
-  height: 25px;
-  width: 300px;
-}
-
-#question {
-  position: relative;
-  left: 41px;
-}
-
-#nameTitle {
-  position: relative;
-  right: 75px;
-}
-
-#emailTitle {
-  position: relative;
-  right: 72px;
-}
-
-#subjectTitle {
-  position: relative;
-  right: 79px;
-}
-
-#qTitle {
-  position: relative;
-  right: 75px;
 }

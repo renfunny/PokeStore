@@ -79,29 +79,38 @@
       <h1 id="sloganSentence1">Got any questions regarding</h1>
       <h1 id="sloganSentence2">what Pokemon is best for you?</h1>
       <h2 id="sloganSentence3">Contact us and we'll help you right away!</h2>
-
       <form id="contactForm">
-        <div class="contactBox">
-          <h3 id="contactSub">Contact information</h3>
-          <p id="nameTitle">Name: <input type="text" id="name" required /></p>
-          <p id="emailTitle">
-            Email:
-            <input
-              type="email"
-              id="email"
-              placeholder="yourfullname@email.com"
-              required
-            />
-          </p>
-          <p id="subjectTitle">
-            Subject: <input type="text" id="subject" required />
-          </p>
-          <p id="qTitle">
-            Question:
-            <textarea id="question" rows="3" cols="35" required></textarea>
-          </p>
-          <p><input type="submit" value="Submit" onclick="validateForm()" /></p>
+        <h3 style="text-align: center">Contact Information:</h3>
+        <div class="mb-3">
+          <label for="InputName" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" required />
         </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="wmail"
+            aria-describedby="emailHelp"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="InputSubject" class="form-label">Subject:</label>
+          <input type="text" class="form-control" id="subject" required />
+        </div>
+        <div class="mb-3">
+          <label for="InputQuestion" class="form-label">Question:</label>
+          <textarea
+            type="text"
+            class="form-control"
+            id="question"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary submit-btn">
+          Submit
+        </button>
       </form>
     </main>
     <script>

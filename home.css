@@ -1,20 +1,47 @@
 main {
-  margin: 10px;
-  z-index: 2;
-}
-.card-image {
-  border-bottom: 5px solid black;
-  background-image: url(./img/istockphoto-1051268740-612x612.jpg);
+    margin: 10px;
+    z-index: 2;
+  }
+  .card-image {
+    border-bottom: 5px solid black;
+    background-image: url(./img/istockphoto-1051268740-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card:hover,
+  .shopping-cart:hover {
+    transform: scale(1.1);
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+.footerbanner
+{
+  margin-top:40px;
+  background-image: url(./img/pokeballfooter.jpg);
   background-size: cover;
   background-position: center;
+  text-align: center;
+  height:250px;
+  padding-top:40px;
 }
 
-.card:hover,
-.shopping-cart:hover {
-  transform: scale(1.1);
+#footheader
+{
+    color:blue;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+#footParagraph
+{
+  position:relative;
+  top:24px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: purple;
+  font-size:20px;
 }
+
+

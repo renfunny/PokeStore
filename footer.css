@@ -1,0 +1,17 @@
+footer {
+  width: 100%;
+  color: white;
+}
+
+.footContainer {
+  margin-top: 20px;
+  background-color: #fd0100;
+  text-align: center;
+  height: 150px;
+  padding-top: 20px;
+}
+
+.footer-banner {
+  transform: rotate(180deg);
+  margin: 0 0 -35px -10px;
+}

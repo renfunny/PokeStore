@@ -3,7 +3,6 @@ function fetchPokemon() {
   for (let i = 0; i < itemNum; i++) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${i + 1}`).then((response) => {
       response.json().then((data) => {
-        console.log(data);
         createCard(data);
       });
     });
@@ -51,5 +50,17 @@ function selectCard() {
     });
   });
 }
+
+let searchBtn = document.getElementById("search-btn");
+let searchInput = document.getElementById("search-input");
+
+searchBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let url = `pokeItem.html?name=${searchInput.value}`;
+  window.location
+    .replace(url)
+    .then(() => console.log("Redirected"))
+    .catch((err) => console.log(err));
+});
 
 fetchPokemon();

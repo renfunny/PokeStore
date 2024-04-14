@@ -1,48 +1,29 @@
 #sloganSentence1 {
-    text-align: center;
-    margin-top: 0px;
-    font-size: 45px;
-  }
-  
-  #sloganSentence2 {
-    text-align: center;
-    font-size: 45px;
-  }
-  
-  #sloganSentence3 {
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  #contactForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 50px 20px 50px 20px;
-    padding: 20px;
-    border: 1px solid black;
-  }
-
-  .footContainer
-  {
-    background-image: url(./img/pokeballfooter.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    height:200px;
-  }
-
-#footheader
-{
-    color:darkgoldenrod;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 45px;
 }
 
-#footParagraph
-{
-  position:relative;
-  top:20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: darkgreen;
-  font-size:17px;
+#sloganSentence2 {
+  text-align: center;
+  font-size: 45px;
+}
+
+#sloganSentence3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 50px 20px 50px 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.banner {
+  margin: 0;
 }

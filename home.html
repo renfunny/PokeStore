@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./home.css" />
     <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./footer.css" />
     <title>PokeStore</title>
   </head>
   <body>
@@ -32,8 +33,11 @@
               type="search"
               placeholder="Search for a Pokemon..."
               aria-label="Search"
+              id="search-input"
             />
-            <button class="btn btn-secondary" type="submit">Search</button>
+            <button id="search-btn" class="btn btn-secondary" type="submit">
+              Search
+            </button>
           </form>
           <a href="./cart.html" class="nav-link shopping-cart">
             <img
@@ -77,11 +81,25 @@
       <div class="row row-cols-2 row-cols-md-4 g-3" id="cards-container"></div>
     </main>
     <footer>
-      <div class="footerbanner">
-        <h1 id="footheader">About PokeStore</h1>
-        <p id="footParagraph">Welcome to PokeStore, your one-stop shop for all things Pokemon!</p>
-        <p id="footParagraph">We offer a wide range of Pokemon products, including games, trading cards, plush toys, and more.</p>
-        <p id="footParagraph">Explore our website to discover the latest Pokemon products and special offers.</p>
+      <div class="banner footer-banner">
+        <img
+          src="./img/wp12044994.jpeg"
+          alt="pokemon_banner"
+          class="banner-img"
+        />
+      </div>
+      <div class="footContainer">
+        <h1 id="footheader">PokeStore</h1>
+        <p id="footParagraph">
+          Each Pokemon is available now for only $4.99! Buy them before they're
+          sold out!
+        </p>
+      </div>
+      <div
+        class="text-center text-white p-3"
+        style="background-color: rgb(157, 13, 13)"
+      >
+        © 2024 Copyright: Pokestore
       </div>
     </footer>
     <script

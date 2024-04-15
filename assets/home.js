@@ -13,7 +13,7 @@ let cardsContainer = document.getElementById("cards-container");
 
 function createCard(data) {
   let cardAnchor = document.createElement("a");
-  cardAnchor.href = `./pokeItem.html?id=${data.id}`;
+  cardAnchor.href = `./assets/pokeItem.html?id=${data.id}`;
   let card = document.createElement("div");
   card.classList.add("col");
   card.id = data.id;
@@ -56,7 +56,7 @@ let searchInput = document.getElementById("search-input");
 
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  let url = `pokeItem.html?name=${searchInput.value}`;
+  let url = `assets/pokeItem.html?name=${searchInput.value}`;
   window.location
     .replace(url)
     .then(() => console.log("Redirected"))

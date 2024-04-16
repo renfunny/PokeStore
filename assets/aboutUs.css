@@ -1,0 +1,19 @@
+.aboutContainer 
+{
+    background-image: url(./img/card-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    
+  }
+
+#descbox
+{
+    position: relative;
+    top: 150px;
+    background-color: aqua;
+    margin:0 auto;
+    border:1px solid black;
+    width:900px
+}
+

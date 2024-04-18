@@ -1,5 +1,4 @@
 let urlId = new URL(window.location.href).searchParams.get("id");
-console.log(urlId);
 let urlName = new URL(window.location.href).searchParams.get("name");
 
 let image1 = document.getElementById("image1");

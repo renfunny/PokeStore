@@ -1,19 +1,21 @@
-.aboutContainer 
-{
-    background-image: url(./img/card-background.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 650px;
-    
-  }
-
-#descbox
-{
-    position: relative;
-    top: 150px;
-    background-color: aqua;
-    margin:0 auto;
-    border:1px solid black;
-    width:900px
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 100px 0;
+  background-image: url(./img/card-background.jpeg);
+  background-size: contain;
+  background-position: top;
+}
+.aboutContainer {
+  height: 80vh;
+  margin: 20px;
 }
 
+#descbox {
+  margin: 0 auto;
+  border: 1px solid grey;
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 100%;
+}

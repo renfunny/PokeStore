@@ -33,10 +33,13 @@
               type="search"
               placeholder="Search for a Pokemon..."
               aria-label="Search"
+              id="search-input"
             />
-            <button class="btn btn-secondary" type="submit">Search</button>
+            <button id="search-btn" class="btn btn-secondary" type="submit">
+              Search
+            </button>
           </form>
-          <a href="./cart.html" class="nav-link">
+          <a href="./cart.html" class="nav-link shopping-cart">
             <img
               src="./img/shopping-cart-icon.png"
               width="30rem"
@@ -46,9 +49,7 @@
         </div>
 
         <div class="container-fluid second-nav">
-          <a class="nav-link active" aria-current="page" href="../index.html"
-            >Home</a
-          >
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           <div class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -176,7 +177,7 @@
       <div class="footContainer">
         <h1 id="footheader">PokeStore</h1>
      <p id="footParagraph">Each Pokemon is available now for only $4.99! Buy them before they're sold out! </p>
-     <a style="text-align:center; color:yellow;" href="./assets/aboutUs.html">About PokeStore</a>
+     <a style="text-align:center; color:yellow;" href="./aboutUs.html">About PokeStore</a>
       </div>
       <div class="text-center text-white p-3" style="background-color: rgb(157, 13, 13);">
         © 2024 Copyright: Pokestore
@@ -189,5 +190,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./pokeItem.js"></script>
+    <script src="./nav.js"></script>
   </body>
 </html>

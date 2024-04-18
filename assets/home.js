@@ -1,4 +1,5 @@
 let itemNum = 32;
+let type = null;
 function fetchPokemon() {
   for (let i = 0; i < itemNum; i++) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${i + 1}`).then((response) => {
@@ -50,17 +51,5 @@ function selectCard() {
     });
   });
 }
-
-let searchBtn = document.getElementById("search-btn");
-let searchInput = document.getElementById("search-input");
-
-searchBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  let url = `assets/pokeItem.html?name=${searchInput.value}`;
-  window.location
-    .replace(url)
-    .then(() => console.log("Redirected"))
-    .catch((err) => console.log(err));
-});
 
 fetchPokemon();
